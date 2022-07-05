@@ -1,214 +1,247 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>胡作启的博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="本科到研究生期间的自学笔记">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>胡作启的博客 - 研究僧自学之路</title><meta name="keywords" content="java,python,Spring,SpringBoot,SpringMvc,MyBatis,MySql"><meta name="author" content="胡作启"><meta name="copyright" content="胡作启"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="本科到研究生期间的自学笔记">
 <meta property="og:type" content="website">
 <meta property="og:title" content="胡作启的博客">
-<meta property="og:url" content="https://github.com/huzuoqi/huzuoqi.github.io.git/index.html">
+<meta property="og:url" content="https://huzuoqi.github.io/index.html">
 <meta property="og:site_name" content="胡作启的博客">
 <meta property="og:description" content="本科到研究生期间的自学笔记">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img2.baidu.com/it/u=460650380,2044466330&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500">
 <meta property="article:author" content="胡作启">
 <meta property="article:tag" content="java,python,Spring,SpringBoot,SpringMvc,MyBatis,MySql">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img2.baidu.com/it/u=460650380,2044466330&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://huzuoqi.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '胡作启的博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-07-05 21:25:01'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/huzuoqi/huzuoqi.github.io.git/atom.xml" title="胡作启的博客" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
-  
-    <link rel="shortcut icon" href="/huzuoqi/huzuoqi.github.io.git/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/huzuoqi/huzuoqi.github.io.git/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/huzuoqi/huzuoqi.github.io.git/fancybox/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 6.2.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/huzuoqi/huzuoqi.github.io.git/" id="logo">胡作启的博客</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/huzuoqi/huzuoqi.github.io.git/" id="subtitle">研究僧自学之路</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/huzuoqi/huzuoqi.github.io.git/">Home</a>
-        
-          <a class="main-nav-link" href="/huzuoqi/huzuoqi.github.io.git/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/huzuoqi/huzuoqi.github.io.git/atom.xml" title="RSS 订阅"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://github.com/huzuoqi/huzuoqi.github.io.git"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/huzuoqi/huzuoqi.github.io.git/2022/07/05/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-07-05T12:07:15.165Z" itemprop="datePublished">2022-07-05</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/huzuoqi/huzuoqi.github.io.git/2022/07/05/hello-world/">Hello World</a>
-    </h1>
-  
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/mycss.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://img2.baidu.com/it/u=460650380,2044466330&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=500" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/timeline/"><i class="fa-fw fa fa-bell"></i><span> 日志</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://img2.baidu.com/it/u=1384398088,2265636276&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPG?w=700&amp;h=394')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">胡作启的博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/timeline/"><i class="fa-fw fa fa-bell"></i><span> 日志</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">胡作启的博客</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2022/07/05/23%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="23种设计模式">     <img class="post_bg" src="https://img2.baidu.com/it/u=956844633,2884547481&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=732" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="23种设计模式"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/05/23%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="23种设计模式">23种设计模式</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-05T10:00:03.000Z" title="发表于 2022-07-05 18:00:03">2022-07-05</time></span></div><div class="content">oop七大原则开闭原则：对修改关闭，对扩展开放
+**单一职责原则:**一个类只负责一个领域的内容，简而言之就是自己的类负责自己的事情，与别的类互不干涉
+里氏替换原则：父类能出现的地方，可以用子类代替，子类拥有父类的所有属性和方法，通俗来说子类拥有父类的功能，可以拓展父类的功能，但是不能修改父类的功能
+依赖倒置原则：程序要依赖于抽象接口，不要依赖于具体实现。简单的说就是要求对抽象进行编程，不要对实现进行编程，这样就降低了客户与实现模块间的耦合。
+ 接口隔离原则：接口隔离原则要求程序员尽量将臃肿庞大的接口拆分成更小的和更具体的接口，让接口中只包含客户感兴趣的方法。
+迪米特法则：只与你的直接朋友交谈，不跟“陌生人”说话。
+ 合成复用原则：合成复用原则又叫组合&#x2F;聚合复用原则。它要求在软件复用时，要尽量先使用组合或者聚合等关联关系来实现，其次才考虑使用继承关系来实现。
+设计模式的分类总体来说设计模式分为三大类：
+创建型模式，共五种：工厂方法模式、抽象工厂模式、单例模式、建造者模式、原型模式。
+结构型模式，共七种：适配器模式、装饰器模式、代理模式、外观模式、桥接模式、组合模式、享元模式。 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2022/07/05/JDBC/" title="JDBC">     <img class="post_bg" src="https://img2.baidu.com/it/u=1119501632,4170553641&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=889&amp;h=500" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JDBC"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/05/JDBC/" title="JDBC">JDBC</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-05T10:00:03.000Z" title="发表于 2022-07-05 18:00:03">2022-07-05</time></span></div><div class="content">JDBC连接1、加载数据库驱动12//1.加载驱动(开发推荐的方式)Class.forName(&quot;com.mysql.jdbc.Driver&quot;);
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+2、建立连接
+1、数据库URL
+   URL用于标识数据库的位置，程序员通过URL地址告诉JDBC程序连接哪个数据库，URL的写法为：
+ jdbc:mysql:［］&#x2F;&#x2F;localhost:3306&#x2F;shen ?参数名：参数值
+常用数据库URL地址的写法：
+Oracle：jdbc:oracle:thin:@localhost:1521:shen
+SqlServer：jdbc:microsoft:sqlserver:&#x2F;&#x2F;localhost:1433; DatabaseName&#x3D;shen
+MySql：jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;shen
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+2、Connection
+   Jdbc程序中的Connection，它用于代表数据库的链接，Collection是数据库编程中最重要的一个对象，客户端与数据库所有交互都是 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2022/07/05/Javaweb/" title="JavaWeb">     <img class="post_bg" src="https://img1.baidu.com/it/u=681288070,3307850470&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=800&amp;h=500" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaWeb"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/05/Javaweb/" title="JavaWeb">JavaWeb</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-05T10:00:03.000Z" title="发表于 2022-07-05 18:00:03">2022-07-05</time></span></div><div class="content">servletServlet 任务Servlet 执行以下主要任务：
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+读取客户端（浏览器）发送的显式的数据。这包括网页上的 HTML 表单，或者也可以是来自 applet 或自定义的 HTTP 客户端程序的表单。
+读取客户端（浏览器）发送的隐式的 HTTP 请求数据。这包括 cookies、媒体类型和浏览器能理解的压缩格式等等。
+处理数据并生成结果。这个过程可能需要访问数据库，执行 RMI 或 CORBA 调用，调用 Web 服务，或者直接计算得出对应的响应。
+发送显式的数据（即文档）到客户端（浏览器）。该文档的格式可以是多种多样的，包括文本文件（HTML 或 XML）、二进制文件（GIF 图像）、Excel 等。
+发送隐式的 HTTP 响应到客户端（浏览器）。这包括告诉浏览器或其他客户端被返回的文档类型（例如 HTML），设置 cookies 和缓存参数，以及其他类似的任务。
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+Servlet API 概览​    Servlet API 包含以下4个Java包：
+1.javax.servlet   其中包含定义servlet和servlet容器之间契约的类和接口。
+2.javax ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2022/07/05/Jvm/" title="Jvm">     <img class="post_bg" src="https://img0.baidu.com/it/u=787829921,68632134&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=PNG?w=500&amp;h=281" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Jvm"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/05/Jvm/" title="Jvm">Jvm</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-05T10:00:03.000Z" title="发表于 2022-07-05 18:00:03">2022-07-05</time></span></div><div class="content">JVM内存模型组成
+其中，堆和方法区是所有线程共有的，而虚拟机栈，本地方法栈和程序计数器则是线程私有的
+Jvm指令集架构基于栈式架构特点：
+  1.设计和实现更简单，适用于资源受限的系统。
+   2.避开了寄存器的分配难题：使用零地址指定方式分配。
+   3.指令流中的指令大部分是零地址指令，其执行过程依赖操作栈。指令集更小，编译器容易实现。
+   4.不需要硬件的支持，可移植性更好，更好实现跨平台。
+基于寄存器架构特点：
+  1.典型的应用是x86的二进制指令集：比如传统的pc以及Android的Davlik虚拟机。
+  2.指令集架构则是完全依赖硬件，可移植性差。
+  3.性能优秀和执行更高效。
+  4.花费更少的指令去完成一项操作。
+  5.在大部分情况下，基于寄存器架构的指令集往往都以一地址指令、二地址指令和三地址指令为主，而基于栈式架构的指令集是以零地址指令为主。
+ Java类加载机制什么是类加载众所周知，JVM加载的是.class文件。其实，类的加载指的是将类的.class文件中的二进制数据读入到内存中，将其放在运行时数据区的方法区内，然后在堆区创建一个java.lang. ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2022/07/05/Mybatis/" title="MyBatis">     <img class="post_bg" src="https://img0.baidu.com/it/u=1971656692,2667242091&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPG?w=889&amp;h=500" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MyBatis"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/05/Mybatis/" title="MyBatis">MyBatis</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-05T10:00:03.000Z" title="发表于 2022-07-05 18:00:03">2022-07-05</time></span></div><div class="content">mybatisMyBatis介绍
+Mybaits整体架构
+快速入门（quick start）1.引入依赖（pom.xml）12345&lt;dependency&gt;    &lt;groupId&gt;org.mybatis&lt;/groupId&gt;    &lt;artifactId&gt;mybatis&lt;/artifactId&gt;    &lt;version&gt;3.2.8&lt;/version&gt;&lt;/dependency&gt;
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/huzuoqi/huzuoqi.github.io.git/2022/07/05/hello-world/" data-id="cl584wpb20000mmky5s46brip" data-title="Hello World" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/huzuoqi/huzuoqi.github.io.git/archives/2022/07/">七月 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/huzuoqi/huzuoqi.github.io.git/2022/07/05/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 胡作启<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/huzuoqi/huzuoqi.github.io.git/" class="mobile-nav-link">Home</a>
-  
-    <a href="/huzuoqi/huzuoqi.github.io.git/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/huzuoqi/huzuoqi.github.io.git/js/jquery-3.4.1.min.js"></script>
+2.全局配置文件（mybatis-config.xml）12345678910111213141516171819202122232425262728293031323334353637383940&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;&lt;!DOCTYPE configuration  PUBLIC &quot;-//mybatis.org//DTD Config 3.0//EN&quot;  &quot;http://m ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2022/07/05/Spring/" title="Spring">     <img class="post_bg" src="https://img2.baidu.com/it/u=1269847839,3043716952&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=281" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/05/Spring/" title="Spring">Spring</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-05T10:00:03.000Z" title="发表于 2022-07-05 18:00:03">2022-07-05</time></span></div><div class="content">Spring 有两个核心部分： IoC 和 AOP。
 
 
 
-  
-<script src="/huzuoqi/huzuoqi.github.io.git/fancybox/jquery.fancybox.min.js"></script>
+核心
+描述
 
 
 
-
-<script src="/huzuoqi/huzuoqi.github.io.git/js/script.js"></script>
-
-
+IOC
+Inverse of Control 的简写，译为“控制反转”，指把创建对象过程交给 Spring 进行管理。
 
 
+AOP
+Aspect Oriented Programming 的简写，译为“面向切面编程”。  AOP 用来封装多个类的公共行为，将那些与业务无关，却为业务模块所共同调用的逻辑封装起来，减少系统的重复代码，降低模块间的耦合度。另外，AOP 还解决一些系统层面上的问题，比如日志、事务、权限等。
 
-  </div>
-</body>
-</html>
+
+控制反转（IoC）在传统的 Java 应用中，一个类想要调用另一个类中的属性或方法，通常会先在其代码中通过 new Object() 的方式将后者的对象创建出来，然后才能实现属性或方法的调用。为了方便理解和描述，我们可以将前者称为“调用者”，将后者称为“被调用者”。也就是说，调用者掌握着被调用者对象创建的控制权。
+但在 Spring 应用中，Java 对象创建的控制权是掌握在 IoC 容器手里的，其大致步骤如下。
+
+开发人员通过 XML 配置文件、注解、Java 配置类等方式，对 Java 对 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2022/07/05/SpringBoot/" title="SpringBoot">     <img class="post_bg" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.zhimg.com%2Fv2-12b4d7b0d929c2e41257f6d4537a5db8_1440w.jpg%3Fsource%3D172ae18b&amp;refer=http%3A%2F%2Fpic1.zhimg.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1659606000&amp;t=48a3cd2c853e3056aa955e95fe3140f9" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringBoot"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/05/SpringBoot/" title="SpringBoot">SpringBoot</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-05T10:00:03.000Z" title="发表于 2022-07-05 18:00:03">2022-07-05</time></span></div><div class="content">Spring Boot 的特点Spring Boot 具有以下特点：
+1. 独立运行的 Spring 项目Spring Boot 可以以 jar 包的形式独立运行，Spring Boot 项目只需通过命令“ java–jar xx.jar” 即可运行。
+2. 内嵌 Servlet 容器Spring Boot 使用嵌入式的 Servlet 容器（例如 Tomcat、Jetty 或者 Undertow 等），应用无需打成 WAR 包 。
+3. 提供 starter 简化 Maven 配置Spring Boot 提供了一系列的“starter”项目对象模型（POMS）来简化 Maven 配置。
+4. 提供了大量的自动配置Spring Boot 提供了大量的默认自动配置，来简化项目的开发，开发人员也通过配置文件修改默认配置。
+5. 自带应用监控Spring Boot 可以对正在运行的项目提供监控。
+6. 无代码生成和 xml 配置Spring Boot 不需要任何 xml 配置即可实现 Spring 的所有配置。
+Spring Boot starter入门starterSpring Boot  ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2022/07/05/SpringMVC/" title="SpringMvc">     <img class="post_bg" src="https://img0.baidu.com/it/u=536714826,1395654827&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=PNG?w=667&amp;h=500" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SpringMvc"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/05/SpringMVC/" title="SpringMvc">SpringMvc</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-05T10:00:03.000Z" title="发表于 2022-07-05 18:00:03">2022-07-05</time></span></div><div class="content">MVC设计模式简介MVC 设计模式一般指 MVC 框架，M（Model）指数据模型层，V（View）指视图层，C（Controller）指控制层。使用 MVC 的目的是将 M 和 V 的实现代码分离，使同一个程序可以有不同的表现形式。其中，View 的定义比较清晰，就是用户界面。
+在 Web 项目的开发中，能够及时、正确地响应用户的请求是非常重要的。用户在网页上单击一个 URL 路径，这对 Web 服务器来说，相当于用户发送了一个请求。而获取请求后如何解析用户的输入，并执行相关处理逻辑，最终跳转至正确的页面显示反馈结果，这些工作往往是控制层（Controller）来完成的。
+在请求的过程中，用户的信息被封装在 User 实体类中，该实体类在 Web 项目中属于数据模型层（Model）。
+在请求显示阶段，跳转的结果网页就属于视图层（View）。
+总结如下：
+
+视图层（View）：负责格式化数据并把它们呈现给用户，包括数据展示、用户交互、数据验证、界面设计等功能。
+控制层（Controller）：负责接收并转发请求，对请求进行处理后，指定视图并将响应结果发送给客户端。
+数据模型层（Mode ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2022/07/05/java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" title="java基础">     <img class="post_bg" src="https://img2.baidu.com/it/u=1107593992,3150818758&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=288&amp;h=240" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="java基础"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/05/java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" title="java基础">java基础</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-05T10:00:03.000Z" title="发表于 2022-07-05 18:00:03">2022-07-05</time></span></div><div class="content">foreach1234int arr[]= &#123;1,2,3&#125;;for (int x:arr) &#123;    System.out.printf(x+&quot;\t&quot;);&#125;
+
+123456int[][] arr = new int[][]&#123;&#123;1,2,3&#125;,&#123;4,5,6&#125;,&#123;7,8,9&#125;&#125;;for(int[] i: arr)&#123;    for(int j: i)&#123;        System.out.println(&quot;num:&quot;+j);    &#125;&#125;
+
+string123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354//初始化String str = new String(&quot;hello&quot;);char c[]=&#123;&#x27;g&#x27;, ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2022/07/05/java%E5%85%AB%E8%82%A1%E6%96%87/" title="Java八股文">     <img class="post_bg" src="https://img1.baidu.com/it/u=1519606190,3544912462&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=1200&amp;h=800" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Java八股文"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/05/java%E5%85%AB%E8%82%A1%E6%96%87/" title="Java八股文">Java八股文</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-05T10:00:03.000Z" title="发表于 2022-07-05 18:00:03">2022-07-05</time></span></div><div class="content">Java基础基础概念Java 语言有哪些特点?
+简单易学；
+面向对象（封装，继承，多态）；
+平台无关性（ Java 虚拟机实现平台无关性）；
+支持多线程（ C++ 语言没有内置的多线程机制，因此必须调用操作系统的多线程功能来进行多线程程序设计，而 Java 语言却提供了多线程支持）；
+可靠性；
+安全性；
+支持网络编程并且很方便（ Java 语言诞生本身就是为简化网络编程设计的，因此 Java 语言不仅支持网络编程而且很方便）；
+编译与解释并存
+
+JVM vs JDK vs JREJava 虚拟机（JVM）是运行 Java 字节码的虚拟机。JVM 有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的 JVM 实现是 Java 语言“一次编译，随处可以运行”的关键所在。
+JDK 是 Java Development Kit 缩写，它是功能齐全的 Java SDK。它拥有 JRE 所拥有的一切，还有编译器（javac）和工具（如 javadoc 和 jdb）。它能够创建和编译程序。
+JRE 是 Java 运行时 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://img2.baidu.com/it/u=460650380,2044466330&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=500" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">胡作启</div><div class="author-info__description">本科到研究生期间的自学笔记</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/huzuoqi"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">这是胡作启的博客</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/07/05/23%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="23种设计模式"><img src="https://img2.baidu.com/it/u=956844633,2884547481&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=732" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="23种设计模式"/></a><div class="content"><a class="title" href="/2022/07/05/23%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="23种设计模式">23种设计模式</a><time datetime="2022-07-05T10:00:03.000Z" title="发表于 2022-07-05 18:00:03">2022-07-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/05/JDBC/" title="JDBC"><img src="https://img2.baidu.com/it/u=1119501632,4170553641&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=889&amp;h=500" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JDBC"/></a><div class="content"><a class="title" href="/2022/07/05/JDBC/" title="JDBC">JDBC</a><time datetime="2022-07-05T10:00:03.000Z" title="发表于 2022-07-05 18:00:03">2022-07-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/05/Javaweb/" title="JavaWeb"><img src="https://img1.baidu.com/it/u=681288070,3307850470&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=800&amp;h=500" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JavaWeb"/></a><div class="content"><a class="title" href="/2022/07/05/Javaweb/" title="JavaWeb">JavaWeb</a><time datetime="2022-07-05T10:00:03.000Z" title="发表于 2022-07-05 18:00:03">2022-07-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/05/Jvm/" title="Jvm"><img src="https://img0.baidu.com/it/u=787829921,68632134&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=PNG?w=500&amp;h=281" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Jvm"/></a><div class="content"><a class="title" href="/2022/07/05/Jvm/" title="Jvm">Jvm</a><time datetime="2022-07-05T10:00:03.000Z" title="发表于 2022-07-05 18:00:03">2022-07-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/05/Mybatis/" title="MyBatis"><img src="https://img0.baidu.com/it/u=1971656692,2667242091&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPG?w=889&amp;h=500" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MyBatis"/></a><div class="content"><a class="title" href="/2022/07/05/Mybatis/" title="MyBatis">MyBatis</a><time datetime="2022-07-05T10:00:03.000Z" title="发表于 2022-07-05 18:00:03">2022-07-05</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/JavaWeb/" style="font-size: 1.5em; color: #99a9bf">JavaWeb</a> <a href="/tags/java/" style="font-size: 1.5em; color: #99a9bf">java</a> <a href="/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/" style="font-size: 1.3em; color: #99a1ac">小工具</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.1em; color: #999">数据库</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" style="font-size: 1.3em; color: #99a1ac">计算机基础</a> <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">设计模式</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/07/"><span class="card-archive-list-date">七月 2022</span><span class="card-archive-list-count">15</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">15</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2020-10-10T16:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-07-05T13:25:00.611Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 胡作启</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
